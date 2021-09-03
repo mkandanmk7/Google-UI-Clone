@@ -15,20 +15,18 @@
           <li class="headerIcon">Gmail</li>
           <li class="headerIcon">Images</li>
           <li class="headerIcon">
-            <img src="assets/profile.jpg" class="profilePic" />
+            <img src="assets/p.jpg" class="profilePic" />
           </li>
         </ul>
       </header>
       <main class="searchContainer">
         <img src="assets/google-logo.jpg" alt="google logo" />
-        <form onsubmit="return false" id="searchform">
-          <input
-            type="search"
-            class="search"
-            placeholder="Search something..."
-          />
+        <form id="searchform">
+          <input type="text" class="search" placeholder="Search something..." />
           <div class="searchbtncontainer">
-            <button type="submit">Google Search</button>
+            <button id="btnsearch" type="submit" onclick="getData()">
+              Google Search
+            </button>
             <button onclick="alert('Created By Muthu')" type="reset">
               I'm feeling lucky
             </button>
