@@ -14,30 +14,32 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 20px;
+  font-size: 15px;
 }
+
 .links,
 .headerIcon {
   display: flex;
   align-items: center;
   font-weight: 300;
-  margin: 14px;
+  margin: 5px 5px;
 }
+
 .profilePic {
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 44px;
+  height: 40px;
   margin-right: 20px;
 }
 .searchContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .searchContainer > img {
-  max-width: 400px;
-  height: 200px;
+  max-width: 250px;
+  /* height: 150px; */
 }
 
 form {
@@ -49,8 +51,9 @@ form {
 }
 .search {
   width: 100%;
-  border-radius: 5px;
-  height: 40px;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  height: 20px;
   padding: 10px 14px;
   outline: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -59,6 +62,14 @@ form {
   font-size: 15px;
   letter-spacing: 0.5px;
 }
+@media (min-width: 700px) {
+  .search {
+    width: 150%;
+  }
+  .searchContainer > img {
+    width: 500px;
+  }
+}
 .search:hover {
   box-shadow: 2px 5px 10px;
 }
@@ -66,12 +77,18 @@ button {
   font-size: 14px;
   border: 0;
   border-radius: 4px;
-  margin: 10px;
+  margin: 0 10px;
+
   background: #f3f3f3;
   cursor: pointer;
   padding: 10px 8px;
   transition: 0.2s;
   color: #555;
+}
+button:hover {
+  /* border: 0.5px solid; */
+  box-shadow: 5px 1px 10px;
+  transition: 0.1s ease;
 }
 .lang {
   margin-top: 25px;
@@ -80,6 +97,7 @@ button {
 .lang > a {
   text-decoration: none;
   gap: 2rem;
+  font-size: 10px;
 }
 .lang > a:hover {
   text-decoration: underline;
@@ -88,6 +106,9 @@ button {
 .footer {
   background: #f9f9f9;
   display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   justify-content: center;
 }
 .footer > .links {
@@ -96,7 +117,8 @@ button {
 .link {
   font-size: 1rem;
 
-  margin: 20px;
+  margin: 0 20px;
+
   cursor: pointer;
   /* text-align: center; */
 }
