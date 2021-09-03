@@ -50,7 +50,7 @@ form {
 .search {
   width: 100%;
   border-radius: 5px;
-  height: 30px;
+  height: 40px;
   padding: 10px 14px;
   outline: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -58,6 +58,9 @@ form {
   font-weight: bold;
   font-size: 15px;
   letter-spacing: 0.5px;
+}
+.search:hover {
+  box-shadow: 2px 5px 10px;
 }
 button {
   font-size: 14px;
@@ -77,4 +80,23 @@ button {
 .lang > a {
   text-decoration: none;
   gap: 2rem;
+}
+.lang > a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+.footer > .links {
+  list-style: none;
+}
+.link {
+  font-size: 1rem;
+
+  margin: 20px;
+  cursor: pointer;
+  /* text-align: center; */
 }
